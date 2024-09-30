@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# gadgelog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ガジェットブログサイト「ガジェログ」のフロントエンドリポジトリです。
 
-## Available Scripts
+## プロジェクトのサイトを見るには？
 
-In the project directory, you can run:
+```
+$ npm run start
+```
 
-### `npm start`
+とすると`http://localhost:3000`でサイトを見ることができます。
+ちなみに`$`はシェルでいつも表示されている部分のこととしているので、**入力しないでね！**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Git & GitHub の使い方
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. `git branch`で今いるブランチを確認する
 
-### `npm test`
+`*`マークがついているところが自分のいるブランチです。
+もし作業開始時点（ブランチを切る前に）で他のブランチにいたら`git switch main`で
+`main`ブランチに移動してください。
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. `main`ブランチにいることが確認出来たら`git pull`を叩く
 
-### `npm run build`
+コードの最新の変更が自分のフォルダに反映されます。
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. `git switch -c <feat/ブランチ名>`を叩き、新しいブランチを切る
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+`<feat/ブランチ名>`のところが新しいブランチの名前です。
+ブランチ名のところはわかりやすい名前を付けてくださいね！
+ちなみに、このブランチは一つまとまった機能を付けるときに切る、というイメージです。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. `git branch`で今いるブランチをもう一度確認
 
-### `npm run eject`
+先ほど作った`feat/ブランチ名`に`*`が付いていたら OK！
+早速コードを書いていきましょう！
+（このブランチが違っていたら大変なことになるので念のため確認しています...）
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. ある程度コードを書いている途中で`git add .`をする
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ファイルを書いている途中で、変更をステージングエリア（一時保存する的な場所）に保存します。
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. コードを書くのが一区切りついたら`git commit -m "<メッセージ>"`でコミットを作ろう
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+コミットは変更ポイントのようなものです。
+コードを書き進めていて、あれ、やっぱ前のできていた状態に戻したい...となった時に一瞬で戻れる位置が作れるイメージ。
+`<メッセージ>`にはどんな実装をしたのか書くと分かりやすいです。
 
-## Learn More
+#### ブランチとコミットの例
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ブログの個別記事のページを作るぞ！
+-> `git switch -c feat/blog-article-ui`でブランチを切る
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+ブログの個別記事の目次の部分の見た目が作れた！
+-> `git commit -m "feat: 目次部分の見た目実装"`でコミット
+（`feat/blog-article-ui`のブランチに移動している状態）
 
-### Code Splitting
+7. すべて機能を作り終えたら`git push`で GitHub に送信
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+「すべての機能」というのはブランチを切った目的の範囲内で収めてね！
 
-### Analyzing the Bundle Size
+8. GitHub のページに移動して`Pull Request`を作成
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+加えた機能をみんなの持つリポジトリにも反映させましょう。
 
-### Making a Progressive Web App
+- [GitHub の gudgelog](https://github.com/mamenz752/gadgelog)のページに移動します
+- 上部にある`Pull Request`をクリックします
+- `New Pull Request`ボタンをクリックします
+- `base: main <= compare: <feat/ブランチ名>`となっていることを確認します
+- `Create pull request`ボタンを押します
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+できたら、だれか一人から LGTM(Look Goods To Me)というコメントがもらえるまで待っていてね！
+（PR 作ったことは報告してください！）
 
-### Advanced Configuration
+#### (PR を作った人以外)作られた機能を確認して LGTM を送ってみよう！
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- `git fetch`を叩いて GitHub の更新情報を取得します
+- `git switch <feat/PRのブランチ名>`で PR のブランチに移動します
+- `npm run start`で様子を見て問題がないか確認してみましょう
+- 自分の作業に戻るには`git switch <feat/自分の作業していたブランチ名>`に戻れば作業を再開できます
+- 問題がなければ、GitHub にある Pull Request の中の`File Changed`の`Comments`ボタンで`Approve`にチェックを付けてコメントを送信しましょう
+- Pull Request のチャットに「LGTM」と書いてあげると相手への気遣いができるのでなお良き！
 
-### Deployment
+9. Approve や LGTM が届いたらマージしよう
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`Merge Pull Request`ボタンを押して完了です！
