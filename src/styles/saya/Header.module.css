@@ -1,0 +1,58 @@
+.logo {
+  padding-bottom: 12%;
+}
+
+.title {
+  position: absolute;
+  margin: 0 auto;
+  font-size: 72px;
+  font-family: "Rampart One", sans-serif;
+  color: #333333;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 60%;
+  position: absolute;
+  background-color: #D9D9D9;
+  z-index: -1;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 60%;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  background-color: #D9D9D9;
+  z-index: -1;
+}
+
+.nav {
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.nav_menu {
+  list-style-type: none;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.nav_menu_item a {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  color: #333333;
+  text-decoration: underline;
+}
+
+.nav_menu_item a:hover {
+  opacity: 0.6;
+}
