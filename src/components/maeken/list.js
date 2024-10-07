@@ -1,17 +1,18 @@
-import "../../styles/lit.css";
-import "../../public/image1.png";
+import styles from "../../styles/list.module.css";
+import image1 from"../maeken/image/image 1.png";
 
-function list(){
+function List(){
     return(
-        <div>
-            <img src="/image1.png"/>
-            <div>
-                <h1>テキストテキスト</h1>
-                <div>
-                    <h2>テキストテキストテキストテキスト</h2>
-                </div>
+        <div className={styles.list}>
+            <img src={image1} alt=""/>
+            <div className={styles.title}>
+                <h1>タイトルタイトル</h1>
             </div>
+            <div className={styles.text}> 
+                <p>テキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+            <button>Find out more</button>
         </div>
     )
 }
-export default list;
+export default List;
