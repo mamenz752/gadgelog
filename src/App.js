@@ -1,11 +1,13 @@
 import './App.css';
-import Footer from './components/layouts/Footer';
+import FooterDemo from './components/layouts/FooterDemo';
+import CommonPresenter from './components/saya/CommonPresenter';
 import List from './components/maeken/list';
 
 function App() {
   return (
     <div className="App">
-      <Footer />
+      <CommonPresenter />
+      <FooterDemo />
       <List />
     </div>
   );
