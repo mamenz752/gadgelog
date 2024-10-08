@@ -1,0 +1,25 @@
+.x {
+    color: rgb(9, 93, 248);
+}
+.media {
+    display:grid;
+    flex-flow: column;
+}
+.card {
+    display:flex;
+    padding:5em;
+    background-color:#8D7966;
+    margin:45px auto;
+    width:50%;
+    gap:20px 30px;
+}
+.img {
+    display: inline-block;
+    width:100px;
+    height:100px;
+    border-radius: 50px;
+}
+.name {
+    font-size: larger;
+    font-weight: 500;
+}
