@@ -2,9 +2,11 @@ import "../../styles/saya/Footer.css";
 
 function Footer() {
   return (
-    <small>
-      &copy; 2024 gadgelog All rights reserved.
-    </small>
+    <footer className="footer">
+      <small className="copyright">
+        &copy; 2024 gadgelog All rights reserved.
+      </small>
+    </footer>
   )
 }
 

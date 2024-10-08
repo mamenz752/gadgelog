@@ -1,0 +1,12 @@
+.footer {
+  border-top: #000000 2px solid;
+  padding: 20px 0;
+}
+
+.copyright {
+  display: block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  text-align: center;
+}
