@@ -1,0 +1,33 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.box {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8F1E9; /* 背景色を薄いベージュに設定 */
+    border-radius: 10px; /* 角を丸める */
+}
+
+ul {
+    list-style-type: disc; /* 丸付きリスト */
+    padding-left: 40px; /* 左側の余白を広げる */
+}
+
+li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-indent: -20px; /* • の左の余白を設定 */
+    padding-left: 30px;  /* • と文字の間の余白を広げる */
+    font-weight: 100; /*文字を細くする*/
+}
+
+li::marker {
+    font-size: 10px;
+    padding-right: 40px; /* • と文字の間の余白を追加 */
+}

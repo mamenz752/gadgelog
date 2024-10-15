@@ -1,0 +1,33 @@
+.card {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    background-color: #8D7966;
+    border-radius: 10px;
+    padding: 20px;
+    width: 900px;
+    height: 202px;
+    margin: 20px auto;
+}
+
+.image {
+    /* width: 160px;
+    height: 160px; */
+    margin-right: 20px;
+}
+
+.profile_img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text h2 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+}
+
+.text p {
+    color: white;
+    font-size: 16px;
+}
