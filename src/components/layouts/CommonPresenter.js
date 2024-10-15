@@ -1,5 +1,5 @@
-import Footer from "./Footer";
-import Header from "./Header";
+import Footer from "../saya/Footer";
+import Header from "../saya/Header";
 
 function CommonPresenter() {
   return (

@@ -1,6 +1,6 @@
 import './App.css';
 import FooterDemo from './components/layouts/FooterDemo';
-import CommonPresenter from './components/saya/CommonPresenter';
+import CommonPresenter from './components/layouts/CommonPresenter';
 import List from './components/maeken/list';
 import Ikon from './components/hatake/ikon';
 import Midasi1 from './components/hatake/midasi1';
