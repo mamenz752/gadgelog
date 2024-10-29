@@ -3,18 +3,18 @@
     height: 574px;
 }
 .title {
-align-content: center;
-width: 317px;
-height: 65px;
-line-height: 0.4;
-font-family: "Noto Sans JP";
-font-size: 30;
-text-align: left;
-margin: 10px;
+    align-content: center;
+    width: 317px;
+    height: 65px;
+    line-height: 0.4;
+    font-family: "Noto Sans JP";
+    font-size: 30;
+    text-align: left;
+    margin: 10px;
 }
 .text {
     width: 315px;
-    height: 130px; 
+    height: 130px;
     line-height: 1.5;
     font-family: "Noto Sans JP";
     font-size: 16px;
