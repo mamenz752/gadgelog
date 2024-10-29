@@ -1,13 +1,16 @@
 import './App.css';
+import { AppRoutes } from './routes/index';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Footer from './components/saya/Footer';
 import Header from './components/saya/Header';
-import CommonPresenter from './components/layouts/CommonPresenter';
+
+const router = createBrowserRouter(AppRoutes);
 
 function App() {
   return (
     <div className="App">
       <Header />
-        <CommonPresenter />
+        <RouterProvider router={router} />
       <Footer />
     </div>
   );
