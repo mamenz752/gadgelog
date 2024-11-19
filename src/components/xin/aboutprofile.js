@@ -1,18 +1,20 @@
 import xinstyles from "../../styles/xin/aboutprofile.module.css";
-import xinimage from "../../styles/xin/Rectangle.png"
+import xinimage from "../../styles/xin/Rectangle1.png"
 
 function AboutProfile() {
   return (
     <div>
-      <p className={xinstyles.x}>これはAbout Usです。</p>
+      {/* <p className={xinstyles.x}>これはAbout Usです。</p> */}
       <div className={xinstyles.media}>
         <div className={xinstyles.card}>
-          <div className={xinstyles.img}>
+          <div className={xinstyles.image}>
             <img src={xinimage}/>
           </div>
-          <div>
+          <div className={xinstyles.info}>
             <p className={xinstyles.name}>近代太郎</p>
-            <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p className={xinstyles.text}>テキストテキストテキストテキストテキストテキストテキストテキスト
+              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              </p>
           </div>
         </div>
 
@@ -21,7 +23,7 @@ function AboutProfile() {
         <div className={xinstyles.card}>4</div> */}
       </div>
     </div>
-    
+
   )
 }
 

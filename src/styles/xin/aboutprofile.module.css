@@ -1,25 +1,37 @@
-.x {
-    color: rgb(9, 93, 248);
-}
 .media {
     display:grid;
     flex-flow: column;
 }
 .card {
     display:flex;
+    align-items: center;
+    justify-content: center;
     padding:5em;
     background-color:#8D7966;
     margin:45px auto;
     width:50%;
     gap:20px 30px;
 }
-.img {
-    display: inline-block;
-    width:100px;
+.image {
+    /* display: inline-block; */
+    width: 100px;
     height:100px;
-    border-radius: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.info {
+    width: 60%;
 }
 .name {
-    font-size: larger;
+    font-size: large;
+    color: #ffffff;
     font-weight: 500;
+    line-height: 150%; 
+}
+.text {
+    font-size: medium;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 150%; 
 }
