@@ -1,0 +1,36 @@
+.list {
+    width: 341px;
+    height: 574px;
+}
+.title {
+    align-content: center;
+    width: 317px;
+    height: 65px;
+    line-height: 0.4;
+    font-family: "Noto Sans JP";
+    font-size: 30;
+    text-align: left;
+    margin: 10px;
+}
+.text {
+    width: 315px;
+    height: 130px;
+    line-height: 1.5;
+    font-family: "Noto Sans JP";
+    font-size: 16px;
+    text-align: left;
+    margin: 10px;
+}
+
+button{
+    width: 263px;
+    height: 71px;
+    font-size: 26px;
+    text-align: center;
+    border-radius:6px;
+    color: #FFFFFF;
+    background-color: #8D7966;
+    border: none;
+    margin: 35px;
+    cursor: pointer;
+}
