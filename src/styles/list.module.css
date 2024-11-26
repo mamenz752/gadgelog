@@ -1,6 +1,9 @@
 .list {
     width: 341px;
-    height: 574px;
+    height: 682px;
+
+  
+              
 }
 .title {
     align-content: center;
@@ -10,19 +13,20 @@
     font-family: "Noto Sans JP";
     font-size: 30;
     text-align: left;
-    margin: 10px;
+    margin-top: 10px;
 }
 .text {
     width: 315px;
-    height: 130px;
+    height: 200px;
     line-height: 1.5;
     font-family: "Noto Sans JP";
     font-size: 16px;
     text-align: left;
-    margin: 10px;
+
+  
 }
 
-button{
+.linkButton{
     width: 263px;
     height: 71px;
     font-size: 26px;

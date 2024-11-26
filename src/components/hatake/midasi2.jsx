@@ -5,7 +5,7 @@ function Midasi2(){
         <div className={styles.content}>
         <h1>メリット</h1>
         <div className={styles.double_line}></div>
-        <p>
+        <p className={styles.text}>
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
             テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
         </p>
