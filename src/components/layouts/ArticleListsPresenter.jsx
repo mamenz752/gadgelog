@@ -8,6 +8,7 @@ const ArticleListsPresenter = () => {
        {
         articles.map((article)=>
           <List 
+          imag1={article.titleImg}
           title={article.title}
           text={article.introduction} 
           id={article.id}
