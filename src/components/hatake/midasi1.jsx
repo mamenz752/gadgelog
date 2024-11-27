@@ -1,10 +1,10 @@
 import styles from "../../styles/hatake/midasi1.module.css";
 
-function Midasi1(){
+function Midasi1({midashi,text}){
     return(
     <div className={styles.section}>
-    <div className={styles.heading}>見出し（結論）</div>
-    <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+    <div className={styles.heading}>{midashi}</div>
+    <p>{text}</p>
   </div>
     )
 }
