@@ -5,9 +5,13 @@ import Midasi1 from '../hatake/midasi1';
 import Midasi2 from '../hatake/midasi2';
 import Midasi3 from '../hatake/midasi3';
 import articles from "../../db/data.json";
+import  {useParams}  from 'react-router-dom';
+
 
 const ArticlePresenter = () => {
-  const data =articles[0];
+  const { id } = useParams();
+  const data = articles.find((data) => data.id === Number(id));
+  
   return (
     <div>
 
