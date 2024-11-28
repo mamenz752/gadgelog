@@ -8,6 +8,7 @@ import articles from "../../db/data.json";
 import { useParams } from 'react-router-dom';
 import CommentForm from '../saya/CommentForm';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Comments from '../saya/Comments';
 
 const ArticlePresenter = () => {
   const { id } = useParams();
@@ -60,6 +61,9 @@ const ArticlePresenter = () => {
       </div>
       <QueryClientProvider client={queryClient}>
         <CommentForm
+          articleId={id}
+        />
+        <Comments
           articleId={id}
         />
       </QueryClientProvider>

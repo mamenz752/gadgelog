@@ -1,9 +1,10 @@
-import { useMutation } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
 
 const CommentForm = ({ articleId }) => {
   const [name, setName] = useState("");
   const [comment, setComment] = useState("");
+  const queryClient = useQueryClient();
 
   const changeName = (e) => { setName(e.target.value) }
   const changeComment = (e) => { setComment(e.target.value) }
@@ -28,6 +29,7 @@ const CommentForm = ({ articleId }) => {
     onSuccess: (res) => {
       setName("");
       setComment("");
+      queryClient.invalidateQueries({queryKey: ["comments"]});
     },
     onError: (error) => {console.error(error)}
   });
