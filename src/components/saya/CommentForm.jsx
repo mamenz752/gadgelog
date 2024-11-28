@@ -1,6 +1,5 @@
 import { useMutation } from "@tanstack/react-query";
 import { useState } from "react";
-// import { set } from "react-hook-form";
 
 const CommentForm = ({ articleId }) => {
   const [name, setName] = useState("");
