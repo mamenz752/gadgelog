@@ -1,6 +1,4 @@
 import styles from "../../styles/hatake/ikon.module.css";
-import ProfileImage from "./image/profile.png"
-
 
 function Ikon({NAME,text,ProfileImage}){
     return(
