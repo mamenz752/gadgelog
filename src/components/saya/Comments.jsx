@@ -1,5 +1,6 @@
 import React from 'react'
 import { useQuery } from '@tanstack/react-query'
+import dayjs from 'dayjs';
 
 const Comments = ({ articleId }) => {
   const getComments = async () => {
@@ -20,11 +21,12 @@ const Comments = ({ articleId }) => {
       <h2>コメント</h2>
       {isLoading ? <p>Loading...</p>
         : comments.data.map((comment) => {
+          const date = dayjs(comment.date).locale("ja").format('YYYY/MM/DD');
           return (
             <div key={comment.id}>
               <h3>{comment.name}</h3>
               <p>{comment.comment}</p>
-              <p>{comment.date}</p>
+              <p>{date}</p>
             </div>
           )
       })}
