@@ -10,7 +10,7 @@ const CommentForm = ({ articleId }) => {
   const changeComment = (e) => { setComment(e.target.value) }
 
   const createComment = async (data) => {
-    const res = await fetch("http://localhost:5000/api/comments", {
+    const res = await fetch("http://localhost:5500/api/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
