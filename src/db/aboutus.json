@@ -1,23 +1,23 @@
 [
         {
         "name": "Saya",
-        "imagePath": "../public/aboutus/saya.jpg",
+        "imagePath": "/aboutus/saya.jpg",
         "description": "エンジニア志望の学生です！普段はフルスタックに開発するのが好きです！最近はインフラに興味が出てきて組み立てパソコンを作ることに興味があります！"
         },
         {
         "name": "Maeken",
-        "imagePath": "../../public/aboutus/maeken.jpg",
+        "imagePath": "/aboutus/maeken.jpg",
         "description": "大学３年生、情報学科で勉強している。趣味はバイクに乗ることで、緑のNINJA250に乗っている。"
         },
         {
         "name": "Hatake",
-        "imagePath": "../../public/aboutus/hatake.jpg",
+        "imagePath": "/aboutus/hatake.jpg",
         "description": "情報系の大学3年生。鳥が好きでオカメインコを飼っています。車も好きでライズに乗ってます！"
         },
         {
         "name": "xinru",
-        "imagePath": "../../public/aboutus/xinru.jpg",
-        "description": "デザイン大好きハッピーハッピー"
+        "imagePath": "/aboutus/xinru.jpg",
+        "description": "情報学科の学生です。デザインが好きで、特にWebページのデザインに興味があります。シンプルで使いやすいデザインを目指して取り組んでいます。"
         }
     
   
