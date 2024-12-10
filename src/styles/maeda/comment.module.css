@@ -1,0 +1,70 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    border-top: #000000 1px solid;
+    border-bottom: #000000 1px solid;
+    
+}
+
+.NB{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.name{
+    width:381px;
+    height: 61px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: hidden;
+}
+.comment{
+    width: 615px;
+    height: 176px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: hidden;
+}
+.submitButton{
+    display: block;
+    width: 174px;
+    height: 55px;
+    background-color: #8D7966;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: hidden;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.commentbox{
+    width: 839px;
+    height: 127px;
+    margin: 20px auto; 
+    border-bottom: #000000 1px solid;
+}
+
+
+.h2{
+width: 64px;
+height: 24px;
+font-size: 80%;
+
+}
+.h3{
+    
+    height: 24px;
+    width: 32px;
+   
+}
+.h4{
+    margin-left: 20px;
+    margin-right: 20px;
+  overflow: auto;
+}
+.d{
+    margin-left: 700px;
+}

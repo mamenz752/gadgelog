@@ -1,5 +1,7 @@
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useState } from "react";
+import styles from"../../styles/maeda/comment.module.css";
+
 
 const CommentForm = ({ articleId }) => {
   const [name, setName] = useState("");
@@ -44,30 +46,43 @@ const CommentForm = ({ articleId }) => {
   }
 
   return (
-    <form
+    <form className={styles.form}
       onSubmit={(e) => handleSubmit(e)}
     >
-      <input
-        type="text"
-        name="name"
-        id=""
-        placeholder="名前"
-        value={name}
-        onChange={(e) => changeName(e)}
-      />
-      <input
+      <div className={styles.NB}>
+        <p
+          for="name"
+        >
+          名前:
+        </p>
+        <input className={styles.name}
+          type="text"
+          name="name"
+          id="name"
+          placeholder=""
+          value={name}
+          onChange={(e) => changeName(e)}
+        />
+
+        <p
+          for="comment"
+        >
+        コメント:
+        </p>
+      <input className={styles.comment}
         type="text"
         name="comment"
-        id=""
-        placeholder="コメント"
+        id="comment"
+        placeholder=""
         value={comment}
         onChange={(e) => changeComment(e)}
       />
-      <button
+      <button className={styles.submitButton}
         type="submit"
       >
-        送信
+        書き込む
       </button>
+      </div>
     </form>
   )
 }
