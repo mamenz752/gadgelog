@@ -5,7 +5,7 @@ import styles from"../../styles/maeda/comment.module.css";
 
 const Comments = ({ articleId }) => {
   const getComments = async () => {
-    const res = await fetch(`http://localhost:5500/api/comments/${articleId}`);
+    const res = await fetch(`http://localhost:5000/api/comments/${articleId}`);
     if (!res.ok) {
       throw new Error('Fetch failed');
     }
